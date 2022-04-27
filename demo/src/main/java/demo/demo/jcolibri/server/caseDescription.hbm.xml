@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping default-lazy="false">
+<class name="demo.demo.jcolibri.server.caseDescription" table="casebase">
+
+	<id name="id" column="id">
+	  <generator class="native"/>
+	</id>
+	<property name="nip" column="nip"/>
+	<property name="j" column="j"/>
+	<property name="sa" column="sa"/>
+	<property name="t" column="t"/>
+	<property name="ht" column="ht"/>
+	<property name="aus" column="aus"/>
+	<property name="des" column="des"/>
+	<property name="kt" column="kt"/>
+	<property name="abl" column="abl"/>
+	<property name="infkt" column="infkt"/>
+	<property name="sec" column="sec"/>
+	<property name="msec" column="msec"/>
+	<property name="tou" column="tou"/>
+	<property name="dys" column="dys"/>
+	<property name="su" column="su"/>
+	<property name="pyu" column="pyu"/>
+	<property name="brm" column="brm"/>
+	<property name="dsp" column="dsp"/>
+	<property name="fr" column="fr"/>
+	<property name="lu" column="lu"/>
+
+	<property name="gb" column="gb"/>
+	<property name="crp" column="crp"/>
+	<property name="pct" column="pct"/>
+	<property name="rx" column="rx"/>
+	
+</class>
+</hibernate-mapping>
