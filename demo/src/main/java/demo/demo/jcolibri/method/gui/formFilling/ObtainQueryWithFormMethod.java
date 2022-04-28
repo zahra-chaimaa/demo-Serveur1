@@ -29,10 +29,10 @@ import demo.demo.jcolibri.cbrcore.CBRQuery;
 import demo.demo.jcolibri.cbrcore.CaseComponent;
 import demo.demo.jcolibri.exception.AttributeAccessException;
 import demo.demo.jcolibri.method.gui.editors.ParameterEditor;
-import demo.demo.jcolibri.method.gui.editors.ParameterEditorFactory;
 import demo.demo.jcolibri.method.gui.utils.LayoutUtils;
 import demo.demo.jcolibri.method.gui.utils.WindowUtils;
 import demo.demo.jcolibri.util.AttributeUtils;
+import es.ucm.fdi.gaia.jcolibri.method.gui.editors.ParameterEditorFactory;
 
 /**
  * Shows a from to obtain the query.<br>
@@ -168,7 +168,7 @@ public class ObtainQueryWithFormMethod
 	            if(label==null)
 	        	label = a.getName();
 	            simplePanel.add(new JLabel(label));
-	            ParameterEditor pe = ParameterEditorFactory.getEditor(a.getType());
+	            ParameterEditor pe = (ParameterEditor) ParameterEditorFactory.getEditor(a.getType());
 	            simplePanel.add(pe.getJComponent());
 	            editors.put(a,pe);
 	            sAtts++;

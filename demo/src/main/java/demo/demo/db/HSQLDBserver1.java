@@ -2,7 +2,8 @@ package demo.demo.db;
 
 
 
-import org.egothor.stemmer.Row;
+//import org.egothor.stemmer.Row;
+import org.hsqldb.Row;
 import org.hsqldb.Server;
 
 import java.io.FileInputStream;
